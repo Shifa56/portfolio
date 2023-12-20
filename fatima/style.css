@@ -47,7 +47,7 @@ nav ul li a ::after{
     width: 0;
     height: 3px;
     background: #62426c;
-    position: absosulte;
+    position: absolute;
     left:0;
     bottom:-6px;
     transition: 0.5s;
@@ -91,7 +91,6 @@ nav ul li a:hover::after{
     font-size: 60%;
     font-weight: 600;
     color:rgb(19, 29, 29);
-
 }
 
 .tab-tittles{
@@ -118,17 +117,29 @@ nav ul li a:hover::after{
 .tab-links.active-link::after{
     width: 50%;
 }
-.tab-content ul li{
+.tab-contents ul li{
     list-style: none;
     margin: 10px 0;
 }
-.tab-content ul li span{
-    color: #ff004f;
+.tab-contents ul li span{
+    color: #ff004f ;
     font-size: 14px;
 }
-.tab-contests{
+.tab-contents{
     display: none;
 }
 .tab-contents.active-tab{
     display: block;
+}
+
+/* services */
+
+#services{
+    padding: 30px 0;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px , 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
 }
